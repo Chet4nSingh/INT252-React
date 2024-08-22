@@ -5,7 +5,7 @@ export default function LandingPage() {
   return (
     <>
       <Header />
-      <main className="w-full mt-8">
+      <main className="w-full">
         <Topics />
       </main>
     </>
