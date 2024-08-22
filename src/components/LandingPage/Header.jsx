@@ -2,7 +2,7 @@ import reactLogo from "../../assets/react.svg";
 
 export default function Header() {
   return (
-    <header className="w-full p-4 border text-white flex justify-between items-center">
+    <header className="w-full p-4 text-white flex justify-between items-center">
       <img id="react-logo" src={reactLogo} alt="React" className="w-16" />
       <h1 className="text-4xl">React Landing Page</h1>
       <nav>
