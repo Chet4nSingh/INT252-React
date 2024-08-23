@@ -48,4 +48,18 @@ export const LANDING_PAGE_TOPICS = [
         created: '20/08/2024',
         author: 'Hailee'
     },
+    {
+        id: 7,
+        name: 'Single Page Application',
+        symbol: 'SPA',
+        created: '27/08/2024',
+        author: 'Peter'
+    },
+    {
+        id: 8,
+        name: 'Redux',
+        symbol: 'Red',
+        created: '30/08/2024',
+        author: 'Vic'
+    },
 ]

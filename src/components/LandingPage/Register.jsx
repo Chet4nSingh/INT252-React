@@ -17,7 +17,7 @@ export default function Register({ open, onCloseRegister }) {
     <dialog
       id="register-modal"
       ref={dialog}
-      className="px-8 py-6 mt-48 bg-slate-800 text-white border backdrop-blur-lg"
+      className="px-8 py-6 mt-48 bg-slate-800 text-white border backdrop:bg-black backdrop:opacity-50"
     >
       <button
         onClick={onCloseRegister}
