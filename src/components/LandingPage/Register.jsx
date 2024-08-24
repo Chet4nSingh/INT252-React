@@ -18,13 +18,16 @@ export default function Register({ open, onCloseRegister }) {
       id="register-modal"
       ref={dialog}
       className="px-8 py-6 mt-48 bg-slate-800 text-white border backdrop:bg-black backdrop:opacity-50"
+      onClose={onCloseRegister}
     >
-      <button
-        onClick={onCloseRegister}
-        className="w-full text-2xl text-right mb-4"
-      >
-        X
-      </button>
+      <div className="text-right">
+        <button
+          onClick={onCloseRegister}
+          className="text-2xl outline-none mb-4"
+        >
+          X
+        </button>
+      </div>
       <form>
         <p className="mb-8">
           <label className="text-xl mr-8" htmlFor="username">
