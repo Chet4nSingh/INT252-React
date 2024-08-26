@@ -1,14 +1,39 @@
 import { createContext, useState } from "react";
 
 const LandingPageContext = createContext({
+  selectedModal: null,
   showRegisterModal: () => {},
-  closeRegisterModal: () => {},
   showLoginModal: () => {},
-  closeLoginModal: () => {},
+  closeModal: () => {},
 });
 
 export function LandingPageContextProvider({ children }) {
-  return <LandingPageContext.Provider>{children}</LandingPageContext.Provider>;
+  const [selectedModal, setSelectedModal] = useState(null);
+
+  function showRegisterModal() {
+    setSelectedModal("register");
+  }
+
+  function showLoginModal() {
+    setSelectedModal("register");
+  }
+
+  function closeModal() {
+    setSelectedModal(null);
+  }
+
+  const ctxValue = {
+    selectedModal,
+    showRegisterModal,
+    showLoginModal,
+    closeModal,
+  };
+
+  return (
+    <LandingPageContext.Provider value={ctxValue}>
+      {children}
+    </LandingPageContext.Provider>
+  );
 }
 
 export default LandingPageContext;

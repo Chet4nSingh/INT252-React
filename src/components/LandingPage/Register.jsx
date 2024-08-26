@@ -1,7 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
+import LandingPageContext from "./store/LandingPageContext";
 
-export default function Register({ open, onCloseRegister }) {
+export default function Register({ open }) {
   const dialog = useRef();
+  const { closeModal } = useContext(LandingPageContext);
 
   useEffect(() => {
     if (open) {
@@ -18,11 +20,11 @@ export default function Register({ open, onCloseRegister }) {
       id="register-modal"
       ref={dialog}
       className="px-8 py-6 mt-48 bg-slate-800 text-white border backdrop:bg-black backdrop:opacity-50"
-      onClose={onCloseRegister}
+      onClose={closeModal}
     >
       <div className="text-right">
         <button
-          onClick={onCloseRegister}
+          onClick={closeModal}
           className="text-2xl outline-none mb-4"
         >
           X
