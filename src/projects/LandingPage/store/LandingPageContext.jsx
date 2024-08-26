@@ -8,18 +8,18 @@ const LandingPageContext = createContext({
 });
 
 export function LandingPageContextProvider({ children }) {
-  const [selectedModal, setSelectedModal] = useState(null);
+  const [selectedModal, setSelectedModal] = useState('null');
 
   function showRegisterModal() {
     setSelectedModal("register");
   }
 
   function showLoginModal() {
-    setSelectedModal("register");
+    setSelectedModal("login");
   }
 
   function closeModal() {
-    setSelectedModal(null);
+    setSelectedModal('null');
   }
 
   const ctxValue = {

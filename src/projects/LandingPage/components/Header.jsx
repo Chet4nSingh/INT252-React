@@ -3,7 +3,7 @@ import reactLogo from "../../../assets/react.svg";
 import LandingPageContext from "../store/LandingPageContext";
 
 export default function Header() {
-  const { showRegisterModal } = useContext(LandingPageContext);
+  const { showRegisterModal, showLoginModal } = useContext(LandingPageContext);
 
   return (
     <header className="w-full p-4 text-white flex justify-between items-center">
@@ -21,7 +21,10 @@ export default function Header() {
         >
           Register
         </button>
-        <button className="bg-sky-700 hover:bg-sky-800 px-4 py-1 rounded-md">
+        <button
+          onClick={showLoginModal}
+          className="bg-sky-700 hover:bg-sky-800 px-4 py-1 rounded-md"
+        >
           Login
         </button>
       </nav>
