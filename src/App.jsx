@@ -1,5 +1,5 @@
-import LandingPage from "./components/LandingPage/LandingPage";
-import { LandingPageContextProvider } from "./components/LandingPage/store/LandingPageContext";
+import LandingPage from "./projects/LandingPage/components/LandingPage";
+import { LandingPageContextProvider } from "./projects/LandingPage/store/LandingPageContext";
 
 function App() {
   return (

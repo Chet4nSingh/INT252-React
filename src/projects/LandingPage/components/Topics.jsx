@@ -1,4 +1,4 @@
-import { LANDING_PAGE_TOPICS } from "../../landing-page-topics";
+import { LANDING_PAGE_TOPICS } from "../landing-page-topics";
 import Topic from "./Topic";
 
 export default function Topics() {

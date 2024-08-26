@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef } from "react";
-import LandingPageContext from "./store/LandingPageContext";
+import LandingPageContext from "../store/LandingPageContext";
 
 export default function Register({ open }) {
   const dialog = useRef();
@@ -15,6 +15,9 @@ export default function Register({ open }) {
     };
   }, [open]);
 
+  const inputStyles =
+    "border-b-2 text-xl py-2 pl-4 text-white outline-none bg-transparent";
+
   return (
     <dialog
       id="register-modal"
@@ -23,10 +26,7 @@ export default function Register({ open }) {
       onClose={closeModal}
     >
       <div className="text-right">
-        <button
-          onClick={closeModal}
-          className="text-2xl outline-none mb-4"
-        >
+        <button onClick={closeModal} className="text-2xl outline-none mb-4">
           X
         </button>
       </div>
@@ -36,7 +36,7 @@ export default function Register({ open }) {
             Username
           </label>
           <input
-            className="border-b-2 text-xl py-2 pl-4 text-white outline-none bg-transparent "
+            className={inputStyles}
             type="text"
             id="username"
             name="username"
@@ -48,7 +48,7 @@ export default function Register({ open }) {
             Email
           </label>
           <input
-            className="border-b-2 text-xl py-2 pl-4 text-white outline-none bg-transparent "
+            className={inputStyles}
             type="email"
             id="email"
             name="email"
@@ -60,7 +60,7 @@ export default function Register({ open }) {
             Password
           </label>
           <input
-            className="border-b-2 text-xl py-2 pl-4 text-white outline-none bg-transparent "
+            className={inputStyles}
             type="password"
             id="password"
             name="password"

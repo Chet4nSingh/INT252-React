@@ -1,9 +1,8 @@
 import { useContext } from "react";
-import reactLogo from "../../assets/react.svg";
-import LandingPageContext from "./store/LandingPageContext";
+import reactLogo from "../../../assets/react.svg";
+import LandingPageContext from "../store/LandingPageContext";
 
 export default function Header() {
-
   const { showRegisterModal } = useContext(LandingPageContext);
 
   return (
@@ -14,7 +13,7 @@ export default function Header() {
         alt="React"
         className="w-16 cursor-pointer"
       />
-      <h1 className="text-4xl">React Landing Page</h1>
+      <h1 className="text-4xl">React Up</h1>
       <nav>
         <button
           onClick={showRegisterModal}
