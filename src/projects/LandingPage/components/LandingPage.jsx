@@ -13,7 +13,7 @@ export default function LandingPage() {
       <Register open={selectedModal === "register"} />
       <Login />
       <Header />
-      <main className="w-full">
+      <main className="w-full">        
         <Topics />
       </main>
     </>
