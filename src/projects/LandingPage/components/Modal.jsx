@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef } from "react";
 import LandingPageContext from "../store/LandingPageContext";
 
-export default function Modal({ open }) {
+export default function Modal({ open, children }) {
   const dialog = useRef();
   const { closeModal } = useContext(LandingPageContext);
 
@@ -31,6 +31,7 @@ export default function Modal({ open }) {
         </button>
       </div>
       <form>
+        {children}
         <p className="mb-8">
           <label className="text-xl mr-8" htmlFor="email">
             Email

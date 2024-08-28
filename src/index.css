@@ -22,7 +22,7 @@
 
 @keyframes appear {
     0% {
-        transform: translateY(-5rem);
+        transform: translateY(-2rem);
     }
 
     100% {
