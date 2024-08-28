@@ -13,7 +13,7 @@ export default function Header() {
         alt="React"
         className="w-16 cursor-pointer"
       />
-      <h1 className="text-4xl">React Up</h1>
+      <h1 className="text-4xl font-bold">React Up</h1>
       <nav>
         <button
           onClick={showRegisterModal}

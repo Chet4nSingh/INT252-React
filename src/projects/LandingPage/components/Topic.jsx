@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import TopicModal from "./TopicModal";
 import LandingPageContext from "../store/LandingPageContext";
 
 export default function Topic({ topic }) {

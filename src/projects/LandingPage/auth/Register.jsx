@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from "react";
+import { useContext } from "react";
 import LandingPageContext from "../store/LandingPageContext";
 import Modal from "../components/Modal";
 

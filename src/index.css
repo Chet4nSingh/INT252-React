@@ -21,11 +21,11 @@
 }
 
 @keyframes appear {
-    0% {
+    from {
         transform: translateY(-2rem);
     }
 
-    100% {
+    to {
         transform: translateY(0);
     }
 }
