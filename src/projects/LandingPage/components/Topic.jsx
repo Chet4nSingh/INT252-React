@@ -1,10 +1,12 @@
+import { useContext } from "react";
 import TopicModal from "./TopicModal";
+import LandingPageContext from "../store/LandingPageContext";
 
 export default function Topic({ topic }) {
+  const {showTopicModal} = useContext(LandingPageContext);
   return (
     <>
-      <TopicModal topic={topic} />
-      <li className="h-80 text-white rounded-xl cursor-pointer hover:scale-105 duration-100">
+      <li onClick={() => showTopicModal(topic)} className="h-80 text-white rounded-xl cursor-pointer hover:scale-105 duration-100">
         <div className="w-full h-2/3 grid place-items-center rounded-ss-lg rounded-se-lg bg-gray-600">
           <span className="text-6xl font-bold">{topic.symbol}</span>
         </div>

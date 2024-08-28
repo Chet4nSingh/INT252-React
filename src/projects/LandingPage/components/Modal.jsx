@@ -20,9 +20,9 @@ export default function Modal({ open }) {
 
   return (
     <dialog
-      id="register-modal"
+      id="modal"
       ref={dialog}
-      className="px-8 py-6 mt-48 bg-slate-800 text-white border backdrop:bg-black backdrop:opacity-50"
+      className="px-8 py-6 mt-48 bg-slate-800 text-white border backdrop:bg-black backdrop:opacity-70"
       onClose={closeModal}
     >
       <div className="text-right">
