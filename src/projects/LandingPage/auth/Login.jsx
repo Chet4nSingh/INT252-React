@@ -3,7 +3,7 @@ import Modal from "../components/Modal";
 import LandingPageContext from "../store/LandingPageContext";
 
 export default function Login() {
-    const { selectedModal } = useContext(LandingPageContext);
+  const { selectedModal } = useContext(LandingPageContext);
 
-    return <Modal open={selectedModal === "login"} />
+  return <Modal id="login" open={selectedModal === "login"} />;
 }

@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef } from "react";
 import LandingPageContext from "../store/LandingPageContext";
 
-export default function Modal({ open, children }) {
+export default function Modal({ open, children, id }) {
   const dialog = useRef();
   const { closeModal } = useContext(LandingPageContext);
 
@@ -33,25 +33,25 @@ export default function Modal({ open, children }) {
       <form>
         {children}
         <p className="mb-8">
-          <label className="text-xl mr-8" htmlFor="email">
+          <label className="text-xl mr-8" htmlFor={`${id}-email`}>
             Email
           </label>
           <input
             className={inputStyles}
             type="email"
-            id="email"
+            id={`${id}-email`}
             name="email"
             required
           />
         </p>
         <p className="mb-8">
-          <label className="text-xl mr-8" htmlFor="password">
+          <label className="text-xl mr-8" htmlFor={`${id}-password`}>
             Password
           </label>
           <input
             className={inputStyles}
             type="password"
-            id="password"
+            id={`${id}-password`}
             name="password"
             required
           />

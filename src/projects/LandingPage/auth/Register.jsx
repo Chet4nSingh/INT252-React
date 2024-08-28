@@ -6,7 +6,7 @@ export default function Register() {
   const { selectedModal } = useContext(LandingPageContext);
 
   return (
-    <Modal open={selectedModal === 'register'}>
+    <Modal id="register" open={selectedModal === 'register'}>
       <p className="mb-8">
         <label className="text-xl mr-8" htmlFor="username">
           Username
