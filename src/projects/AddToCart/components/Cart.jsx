@@ -1,7 +1,9 @@
+import Modal from "./UI/Modal";
+
 export default function Cart() {
   return (
-    <dialog>
-      <h1>Your Cart</h1>
-    </dialog>
+    <Modal>
+      <h1 className="text-4xl">Your Cart</h1>
+    </Modal>
   );
 }
