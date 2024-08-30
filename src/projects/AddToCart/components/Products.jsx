@@ -4,7 +4,7 @@ export default function Products() {
   return (
     <ul className="w-[90%] mx-auto grid grid-cols-3 gap-8">
       {FASHION_PRODUCTS.map((product) => (
-        <li key={product.id} className="text-white border relative group">
+        <li key={product.id} className="text-white border-opacity-50 relative group">
           <div className="h-full">
             <img className="h-full" src={product.image} alt="fashion product" />
           </div>
@@ -15,10 +15,10 @@ export default function Products() {
             <h2 className="text-2xl">{product.name}</h2>
             <p className="text-xl">${product.price}</p>
             <p className="text-xl flex justify-between">
-              <span>
+              <span className="pt-2">
                 <span>{product.ratings}.0</span> {"⭐".repeat(product.ratings)}
               </span>
-              <button className="text-4xl hover:scale-125 duration-100">
+              <button className="text-4xl pb-2 hover:scale-125 duration-100">
                 +
               </button>
             </p>
