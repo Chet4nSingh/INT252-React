@@ -8,10 +8,20 @@ export default function Products() {
           <div className="h-full">
             <img className="h-full" src={product.image} alt="fashion product" />
           </div>
-          <div id="details" className="w-full p-4 pt-8 absolute bottom-0 bg-gradient-to-t from-black opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-300 ">
+          <div
+            id="details"
+            className="w-full p-4 pt-8 absolute bottom-0 bg-gradient-to-t from-black opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-300 "
+          >
             <h2 className="text-2xl">{product.name}</h2>
             <p className="text-xl">${product.price}</p>
-            <p className="text-xl"><span>{product.ratings}.0</span> {"⭐".repeat(product.ratings)}</p>
+            <p className="text-xl flex justify-between">
+              <span>
+                <span>{product.ratings}.0</span> {"⭐".repeat(product.ratings)}
+              </span>
+              <button className="text-4xl hover:scale-125 duration-100">
+                +
+              </button>
+            </p>
           </div>
         </li>
       ))}
