@@ -1,9 +1,9 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useReducer } from "react";
 
 const CartContext = createContext({
   items: [],
-  addItems: () => {},
-  removeItems: () => {},
+  addItem: () => {},
+  removeItem: () => {},
 });
 
 function cartReducer(state, action) {
@@ -41,13 +41,13 @@ export function CartContextProvider({ children }) {
     ],
   });
 
-  function addItems(item) {
+  function addItem(item) {
     cartDispatch({ type: "ADD_ITEM", payload: { item } });
   }
 
   const cartCtx = {
     items: cartState.cartItems,
-    addItems,
+    addItem,
   }
 
   return <CartContext.Provider value={cartCtx}>{children}</CartContext.Provider>;

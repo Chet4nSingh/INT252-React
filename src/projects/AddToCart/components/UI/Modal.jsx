@@ -12,7 +12,7 @@ export default function Modal({ open, children }) {
   }, [open]);
 
   return (
-    <dialog ref={dialog} className="w-1/2 h-3/5 p-8 z-10">
+    <dialog ref={dialog} className="w-1/2 h-3/5 p-8 z-10 outline-none bg-slate-700 text-white overflow-y-scroll">
       {children}
     </dialog>
   );

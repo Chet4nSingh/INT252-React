@@ -7,12 +7,15 @@ export default function Cart() {
 
   return (
     <Modal>
-      <h1 className="text-4xl">Your Cart</h1>
+      <h1 className="text-4xl mb-8">Your Cart</h1>
       <ul>
         {items.map(item => (
-          <li key={item.id}>{item.name} - {item.price}</li>
+          <li key={item.id} className="text-xl mb-4 p-4 w-full border flex justify-between"><span>{item.name} - {item.price}</span><span>{6}</span></li>
         ))}
       </ul>
+      <div className="text-right">
+        <button className="my-8 text-lg border px-4 py-2">Checkout</button>
+      </div>
     </Modal>
   );
 }
