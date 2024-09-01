@@ -4,6 +4,7 @@ import CartContext from "../store/CartContext";
 
 export default function Cart() {
   const {items} = useContext(CartContext);
+
   return (
     <Modal>
       <h1 className="text-4xl">Your Cart</h1>

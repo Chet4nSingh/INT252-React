@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <CartContextProvider>
-        <Header />
         <Cart />
+        <Header />
         <main className="my-8 w-full">
           <Products />
         </main>
