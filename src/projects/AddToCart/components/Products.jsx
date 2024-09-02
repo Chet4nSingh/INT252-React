@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import { FASHION_PRODUCTS } from "../fashion-products";
+import CartContext from "../store/CartContext";
 
 export default function Products() {
+  const {addItem} = useContext(CartContext);
+
   return (
     <ul className="w-[90%] mx-auto grid grid-cols-3 gap-8">
       {FASHION_PRODUCTS.map((product) => (
@@ -18,7 +22,7 @@ export default function Products() {
               <span className="pt-2">
                 <span>{product.ratings}.0</span> {"⭐".repeat(product.ratings)}
               </span>
-              <button className="text-4xl pb-2 hover:scale-125 duration-100">
+              <button onClick={() => addItem(product)} className="text-4xl pb-2 hover:scale-125 duration-100">
                 +
               </button>
             </p>
