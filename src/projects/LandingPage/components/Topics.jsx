@@ -9,7 +9,7 @@ export default function Topics() {
   return (
     <>
       <TopicModal topic={selectedTopic} open={selectedTopic} />
-      <ul className="mx-auto my-8 w-[90%] grid grid-cols-3 gap-8">
+      <ul className="mx-auto my-8 w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {LANDING_PAGE_TOPICS.map((topic) => (
           <Topic key={topic.id} topic={topic} />
         ))}

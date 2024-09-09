@@ -17,7 +17,7 @@ export default function TopicModal({ topic, open }) {
     <dialog
       id="modal"
       ref={dialog}
-      className="w-3/5 h-4/5 p-8 bg-slate-800 border text-white z-10 backdrop:bg-black backdrop:opacity-70 overflow-y-scroll"
+      className="w-4/5 lg:w-3/5 h-4/5 p-8 bg-slate-800 border text-white z-10 backdrop:bg-black backdrop:opacity-70"
       onClose={closeModal}
     >
       <header>

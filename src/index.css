@@ -20,6 +20,10 @@
     animation: appear 300ms ease-in-out;
 }
 
+#modal::-webkit-scrollbar {
+    display: none;
+}
+
 @keyframes appear {
     from {
         transform: translateY(-2rem);
