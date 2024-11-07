@@ -33,3 +33,135 @@
         transform: translateY(0);
     }
 }
+
+/* Container styling */
+.toggle-list-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 300px;
+    margin: 4rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button styling */
+  .toggle-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* List styling */
+  .item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  /* Individual list items */
+  .list-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .list-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+
+  /* Container Styling */
+.lifecycle-logger-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 400px;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styling */
+  .header {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Info Section Styling */
+  .info {
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Highlighted Values */
+  .highlight {
+    font-weight: bold;
+    color: #1a73e8;
+  }
+  
+  /* Button Styling */
+  .increment-button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .increment-button:hover {
+    background-color: #145bb5;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 480px) {
+    .lifecycle-logger-component {
+      width: 90%;
+    }
+  
+    .header {
+      font-size: 20px;
+    }
+  
+    .info {
+      font-size: 16px;
+    }
+  
+    .increment-button {
+      font-size: 14px;
+    }
+  }
+  
+  
