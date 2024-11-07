@@ -1,6 +1,6 @@
 // import Home from "./projects/AddToCart/components/Home";
 
-import Home from "./projects/Practice/Profiler/Home";
+import Home from "./projects/Practice/UserDetails/Home";
 import LandingPage from "./projects/LandingPage/components/LandingPage";
 import { LandingPageContextProvider } from "./projects/LandingPage/store/LandingPageContext";
 
